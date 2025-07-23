@@ -1,0 +1,1012 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+		<title>Codex</title><link rel="preload" as="image" href="https://codexplore.com.br/wp-content/uploads/2024/06/Banner-Desktop-laranjado.jpg" fetchpriority="high">
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="Feed para codexplore.com.br &raquo;" href="https://codexplore.com.br/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para codexplore.com.br &raquo;" href="https://codexplore.com.br/comments/feed/" />
+<script type="rocketlazyloadscript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/codexplore.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.5.5"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='hello-elementor-css' href='https://codexplore.com.br/wp-content/themes/hello-elementor/style.min.css?ver=3.1.0' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://codexplore.com.br/wp-content/themes/hello-elementor/theme.min.css?ver=3.1.0' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://codexplore.com.br/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.1.0' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.29.2' media='all' />
+<style id='elementor-frontend-inline-css'>
+@-webkit-keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@keyframes ha_fadeIn{0%{opacity:0}to{opacity:1}}@-webkit-keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@keyframes ha_zoomIn{0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}50%{opacity:1}}@-webkit-keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@keyframes ha_rollIn{0%{opacity:0;-webkit-transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg);transform:translate3d(-100%,0,0) rotate3d(0,0,1,-120deg)}to{opacity:1}}@-webkit-keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@keyframes ha_bounce{0%,20%,53%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}40%,43%{-webkit-transform:translate3d(0,-30px,0) scaleY(1.1);transform:translate3d(0,-30px,0) scaleY(1.1);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}70%{-webkit-transform:translate3d(0,-15px,0) scaleY(1.05);transform:translate3d(0,-15px,0) scaleY(1.05);-webkit-animation-timing-function:cubic-bezier(.755,.05,.855,.06);animation-timing-function:cubic-bezier(.755,.05,.855,.06)}80%{-webkit-transition-timing-function:cubic-bezier(.215,.61,.355,1);transition-timing-function:cubic-bezier(.215,.61,.355,1);-webkit-transform:translate3d(0,0,0) scaleY(.95);transform:translate3d(0,0,0) scaleY(.95)}90%{-webkit-transform:translate3d(0,-4px,0) scaleY(1.02);transform:translate3d(0,-4px,0) scaleY(1.02)}}@-webkit-keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@keyframes ha_bounceIn{0%,20%,40%,60%,80%,to{-webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);animation-timing-function:cubic-bezier(.215,.61,.355,1)}0%{opacity:0;-webkit-transform:scale3d(.3,.3,.3);transform:scale3d(.3,.3,.3)}20%{-webkit-transform:scale3d(1.1,1.1,1.1);transform:scale3d(1.1,1.1,1.1)}40%{-webkit-transform:scale3d(.9,.9,.9);transform:scale3d(.9,.9,.9)}60%{opacity:1;-webkit-transform:scale3d(1.03,1.03,1.03);transform:scale3d(1.03,1.03,1.03)}80%{-webkit-transform:scale3d(.97,.97,.97);transform:scale3d(.97,.97,.97)}to{opacity:1}}@-webkit-keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@keyframes ha_flipInX{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(1,0,0,90deg);transform:perspective(400px) rotate3d(1,0,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-20deg);transform:perspective(400px) rotate3d(1,0,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(1,0,0,10deg);transform:perspective(400px) rotate3d(1,0,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(1,0,0,-5deg);transform:perspective(400px) rotate3d(1,0,0,-5deg)}}@-webkit-keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@keyframes ha_flipInY{0%{opacity:0;-webkit-transform:perspective(400px) rotate3d(0,1,0,90deg);transform:perspective(400px) rotate3d(0,1,0,90deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}40%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-20deg);transform:perspective(400px) rotate3d(0,1,0,-20deg);-webkit-animation-timing-function:ease-in;animation-timing-function:ease-in}60%{opacity:1;-webkit-transform:perspective(400px) rotate3d(0,1,0,10deg);transform:perspective(400px) rotate3d(0,1,0,10deg)}80%{-webkit-transform:perspective(400px) rotate3d(0,1,0,-5deg);transform:perspective(400px) rotate3d(0,1,0,-5deg)}}@-webkit-keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@keyframes ha_swing{20%{-webkit-transform:rotate3d(0,0,1,15deg);transform:rotate3d(0,0,1,15deg)}40%{-webkit-transform:rotate3d(0,0,1,-10deg);transform:rotate3d(0,0,1,-10deg)}60%{-webkit-transform:rotate3d(0,0,1,5deg);transform:rotate3d(0,0,1,5deg)}80%{-webkit-transform:rotate3d(0,0,1,-5deg);transform:rotate3d(0,0,1,-5deg)}}@-webkit-keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@keyframes ha_slideInDown{0%{visibility:visible;-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}}@-webkit-keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@keyframes ha_slideInUp{0%{visibility:visible;-webkit-transform:translate3d(0,100%,0);transform:translate3d(0,100%,0)}}@-webkit-keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@keyframes ha_slideInLeft{0%{visibility:visible;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)}}@-webkit-keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}@keyframes ha_slideInRight{0%{visibility:visible;-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0)}}.ha_fadeIn{-webkit-animation-name:ha_fadeIn;animation-name:ha_fadeIn}.ha_zoomIn{-webkit-animation-name:ha_zoomIn;animation-name:ha_zoomIn}.ha_rollIn{-webkit-animation-name:ha_rollIn;animation-name:ha_rollIn}.ha_bounce{-webkit-transform-origin:center bottom;-ms-transform-origin:center bottom;transform-origin:center bottom;-webkit-animation-name:ha_bounce;animation-name:ha_bounce}.ha_bounceIn{-webkit-animation-name:ha_bounceIn;animation-name:ha_bounceIn;-webkit-animation-duration:.75s;-webkit-animation-duration:calc(var(--animate-duration)*.75);animation-duration:.75s;animation-duration:calc(var(--animate-duration)*.75)}.ha_flipInX,.ha_flipInY{-webkit-animation-name:ha_flipInX;animation-name:ha_flipInX;-webkit-backface-visibility:visible!important;backface-visibility:visible!important}.ha_flipInY{-webkit-animation-name:ha_flipInY;animation-name:ha_flipInY}.ha_swing{-webkit-transform-origin:top center;-ms-transform-origin:top center;transform-origin:top center;-webkit-animation-name:ha_swing;animation-name:ha_swing}.ha_slideInDown{-webkit-animation-name:ha_slideInDown;animation-name:ha_slideInDown}.ha_slideInUp{-webkit-animation-name:ha_slideInUp;animation-name:ha_slideInUp}.ha_slideInLeft{-webkit-animation-name:ha_slideInLeft;animation-name:ha_slideInLeft}.ha_slideInRight{-webkit-animation-name:ha_slideInRight;animation-name:ha_slideInRight}.ha-css-transform-yes{-webkit-transition-duration:var(--ha-tfx-transition-duration, .2s);transition-duration:var(--ha-tfx-transition-duration, .2s);-webkit-transition-property:-webkit-transform;transition-property:transform;transition-property:transform,-webkit-transform;-webkit-transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0));transform:translate(var(--ha-tfx-translate-x, 0),var(--ha-tfx-translate-y, 0)) scale(var(--ha-tfx-scale-x, 1),var(--ha-tfx-scale-y, 1)) skew(var(--ha-tfx-skew-x, 0),var(--ha-tfx-skew-y, 0)) rotateX(var(--ha-tfx-rotate-x, 0)) rotateY(var(--ha-tfx-rotate-y, 0)) rotateZ(var(--ha-tfx-rotate-z, 0))}.ha-css-transform-yes:hover{-webkit-transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)));transform:translate(var(--ha-tfx-translate-x-hover, var(--ha-tfx-translate-x, 0)),var(--ha-tfx-translate-y-hover, var(--ha-tfx-translate-y, 0))) scale(var(--ha-tfx-scale-x-hover, var(--ha-tfx-scale-x, 1)),var(--ha-tfx-scale-y-hover, var(--ha-tfx-scale-y, 1))) skew(var(--ha-tfx-skew-x-hover, var(--ha-tfx-skew-x, 0)),var(--ha-tfx-skew-y-hover, var(--ha-tfx-skew-y, 0))) rotateX(var(--ha-tfx-rotate-x-hover, var(--ha-tfx-rotate-x, 0))) rotateY(var(--ha-tfx-rotate-y-hover, var(--ha-tfx-rotate-y, 0))) rotateZ(var(--ha-tfx-rotate-z-hover, var(--ha-tfx-rotate-z, 0)))}.happy-addon>.elementor-widget-container{word-wrap:break-word;overflow-wrap:break-word}.happy-addon>.elementor-widget-container,.happy-addon>.elementor-widget-container *{-webkit-box-sizing:border-box;box-sizing:border-box}.happy-addon p:empty{display:none}.happy-addon .elementor-inline-editing{min-height:auto!important}.happy-addon-pro img{max-width:100%;height:auto;-o-object-fit:cover;object-fit:cover}.ha-screen-reader-text{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);margin:-1px;padding:0;width:1px;height:1px;border:0;word-wrap:normal!important;-webkit-clip-path:inset(50%);clip-path:inset(50%)}.ha-has-bg-overlay>.elementor-widget-container{position:relative;z-index:1}.ha-has-bg-overlay>.elementor-widget-container:before{position:absolute;top:0;left:0;z-index:-1;width:100%;height:100%;content:""}.ha-popup--is-enabled .ha-js-popup,.ha-popup--is-enabled .ha-js-popup img{cursor:-webkit-zoom-in!important;cursor:zoom-in!important}.mfp-wrap .mfp-arrow,.mfp-wrap .mfp-close{background-color:transparent}.mfp-wrap .mfp-arrow:focus,.mfp-wrap .mfp-close:focus{outline-width:thin}.ha-advanced-tooltip-enable{position:relative;cursor:pointer;--ha-tooltip-arrow-color:black;--ha-tooltip-arrow-distance:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content{position:absolute;z-index:999;display:none;padding:5px 0;width:120px;height:auto;border-radius:6px;background-color:#000;color:#fff;text-align:center;opacity:0}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content::after{position:absolute;border-width:5px;border-style:solid;content:""}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.no-arrow::after{visibility:hidden}.ha-advanced-tooltip-enable .ha-advanced-tooltip-content.show{display:inline-block;opacity:1}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-top .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}.ha-advanced-tooltip-enable.ha-advanced-tooltip-bottom .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-left .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}.ha-advanced-tooltip-enable.ha-advanced-tooltip-right .ha-advanced-tooltip-content::after,body[data-elementor-device-mode=tablet] .ha-advanced-tooltip-enable.ha-advanced-tooltip-tablet-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content{top:unset;right:0;bottom:calc(101% + var(--ha-tooltip-arrow-distance));left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-top .ha-advanced-tooltip-content::after{top:100%;right:unset;bottom:unset;left:50%;border-color:var(--ha-tooltip-arrow-color) transparent transparent transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content{top:calc(101% + var(--ha-tooltip-arrow-distance));right:0;bottom:unset;left:0;margin:0 auto}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-bottom .ha-advanced-tooltip-content::after{top:unset;right:unset;bottom:100%;left:50%;border-color:transparent transparent var(--ha-tooltip-arrow-color) transparent;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content{top:50%;right:calc(101% + var(--ha-tooltip-arrow-distance));bottom:unset;left:unset;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-left .ha-advanced-tooltip-content::after{top:50%;right:unset;bottom:unset;left:100%;border-color:transparent transparent transparent var(--ha-tooltip-arrow-color);-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content{top:50%;right:unset;bottom:unset;left:calc(101% + var(--ha-tooltip-arrow-distance));-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body[data-elementor-device-mode=mobile] .ha-advanced-tooltip-enable.ha-advanced-tooltip-mobile-right .ha-advanced-tooltip-content::after{top:50%;right:100%;bottom:unset;left:unset;border-color:transparent var(--ha-tooltip-arrow-color) transparent transparent;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}body.elementor-editor-active .happy-addon.ha-gravityforms .gform_wrapper{display:block!important}.ha-scroll-to-top-wrap.ha-scroll-to-top-hide{display:none}.ha-scroll-to-top-wrap.edit-mode,.ha-scroll-to-top-wrap.single-page-off{display:none!important}.ha-scroll-to-top-button{position:fixed;right:15px;bottom:15px;z-index:9999;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;align-items:center;-ms-flex-align:center;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;width:50px;height:50px;border-radius:50px;background-color:#5636d1;color:#fff;text-align:center;opacity:1;cursor:pointer;-webkit-transition:all .3s;transition:all .3s}.ha-scroll-to-top-button i{color:#fff;font-size:16px}.ha-scroll-to-top-button:hover{background-color:#e2498a}
+</style>
+<link rel='stylesheet' id='elementor-post-6-css' href='https://codexplore.com.br/wp-content/uploads/elementor/css/post-6.css?ver=1734664287' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://codexplore.com.br/wp-content/plugins/elementor-pro/assets/css/frontend.min.css?ver=3.22.0' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-5-all-css' href='https://codexplore.com.br/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=1734664318' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='widget-counter-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/widget-counter.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='widget-icon-box-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.29.2' media='all' />
+<link data-minify="1" rel='stylesheet' id='swiper-css' href='https://codexplore.com.br/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1734664318' media='all' />
+<link rel='stylesheet' id='e-swiper-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='widget-image-carousel-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='widget-divider-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='widget-accordion-css' href='https://codexplore.com.br/wp-content/plugins/elementor/assets/css/widget-accordion.min.css?ver=3.29.2' media='all' />
+<link rel='stylesheet' id='elementor-post-7-css' href='https://codexplore.com.br/wp-content/uploads/elementor/css/post-7.css?ver=1751049325' media='all' />
+<link data-minify="1" rel='stylesheet' id='happy-icons-css' href='https://codexplore.com.br/wp-content/cache/min/1/wp-content/plugins/happy-elementor-addons/assets/fonts/style.min.css?ver=1734664318' media='all' />
+<link data-minify="1" rel='stylesheet' id='font-awesome-css' href='https://codexplore.com.br/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=1734664318' media='all' />
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://codexplore.com.br/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-roboto-css' href='https://codexplore.com.br/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742249807' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='https://codexplore.com.br/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1742249807' media='all' />
+<link data-minify="1" rel='stylesheet' id='elementor-gf-local-sora-css' href='https://codexplore.com.br/wp-content/cache/min/1/wp-content/uploads/elementor/google-fonts/css/sora.css?ver=1742249809' media='all' />
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.29.2" id="font-awesome-4-shim-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<link rel="https://api.w.org/" href="https://codexplore.com.br/wp-json/" /><link rel="alternate" type="application/json" href="https://codexplore.com.br/wp-json/wp/v2/pages/7" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codexplore.com.br/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.5" />
+<link rel="canonical" href="https://codexplore.com.br/" />
+<link rel='shortlink' href='https://codexplore.com.br/' />
+<link rel="alternate" type="application/json+oembed" href="https://codexplore.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodexplore.com.br%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://codexplore.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodexplore.com.br%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.29.2; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://codexplore.com.br/wp-content/uploads/2024/06/cropped-3-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://codexplore.com.br/wp-content/uploads/2024/06/cropped-3-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://codexplore.com.br/wp-content/uploads/2024/06/cropped-3-180x180.png" />
+<meta name="msapplication-TileImage" content="https://codexplore.com.br/wp-content/uploads/2024/06/cropped-3-270x270.png" />
+		<style id="wp-custom-css">
+			body, html {
+overflow-x: hidden !important;
+}
+
+/corrigir escrollamento no Mobile/
+@media (max-width: 786px){
+body, html {
+overflow-x: hidden!important;
+{
+}
+		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="home page-template page-template-elementor_canvas page page-id-7 elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-7">
+			<div data-elementor-type="wp-post" data-elementor-id="7" class="elementor elementor-7" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-8af0058 e-flex e-con-boxed e-con e-parent" data-id="8af0058" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ad47a69 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="ad47a69" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="381" height="149" src="https://codexplore.com.br/wp-content/uploads/2024/06/logo-1.png" class="attachment-large size-large wp-image-16" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2024/06/logo-1.png 381w, https://codexplore.com.br/wp-content/uploads/2024/06/logo-1-300x117.png 300w" sizes="(max-width: 381px) 100vw, 381px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-2083b82 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="2083b82" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O maior <strong>arsenal </strong><br>
+<span class="cor5">hacking do Brasil</span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-76dec71 elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="76dec71" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Aqui, você aprenderá, passo a passo, desde os fundamentos até as técnicas ocultas e mais avançadas do hacking. Não importa seu nível de conhecimento: este é o seu lugar para se tornar um verdadeiro hacker! </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-bb980fc elementor-widget elementor-widget-button" data-id="bb980fc" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#botao">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Obter Acesso</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-f01ce68 elementor-widget elementor-widget-image" data-id="f01ce68" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="465" height="89" src="https://codexplore.com.br/wp-content/uploads/2025/02/junte-se-a-mais-de-2-mil-alunos.png" class="attachment-large size-large wp-image-935" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2025/02/junte-se-a-mais-de-2-mil-alunos.png 465w, https://codexplore.com.br/wp-content/uploads/2025/02/junte-se-a-mais-de-2-mil-alunos-300x57.png 300w" sizes="(max-width: 465px) 100vw, 465px" />															</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fcae97a e-flex e-con-boxed e-con e-parent" data-id="fcae97a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-cdfbf36 elementor-widget elementor-widget-counter" data-id="cdfbf36" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">Alunos</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix">+</span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="2059" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e69d4e2 elementor-widget elementor-widget-counter" data-id="e69d4e2" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">Horas de aulas</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix">+</span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="124" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6744321 elementor-widget elementor-widget-counter" data-id="6744321" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">Arquivos</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix">+</span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="5241" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-28de8cb e-flex e-con-boxed e-con e-parent" data-id="28de8cb" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-a4f9a7b elementor-widget elementor-widget-heading" data-id="a4f9a7b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Compromisso com a Ética e a Legalidade</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5cbcc6b elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="5cbcc6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Na CodeXplorer, nossa missão é capacitar profissionais e entusiastas da segurança cibernética com <b>conhecimento ético, legal e responsável</b>.
+
+Todo o conteúdo oferecido tem caráter educacional e técnico, voltado à defesa digital, investigação forense e inteligência de ameaças. Não promovemos, incentivamos ou toleramos atividades ilegais, invasivas ou que prejudiquem terceiros.
+
+<b>Nosso objetivo é formar mentes preparadas, entender vulnerabilidades e contribuir com a segurança digital e da sociedade.</b></h2>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6c330ad e-flex e-con-boxed e-con e-parent" data-id="6c330ad" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ec9fbea gradient-text1 elementor-widget elementor-widget-heading" data-id="ec9fbea" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O que irá adquirir?
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-9222f22 elementor-widget elementor-widget-heading" data-id="9222f22" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Veja o que reservamos para você:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-0b53e2e elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="0b53e2e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Este arsenal de ferramentas é destinado exclusivamente ao estudo e pesquisa acadêmica, visando o desenvolvimento de habilidades e compreensão aprofundada no campo.</h2>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-da02ab2 e-flex e-con-boxed e-con e-parent" data-id="da02ab2" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4deb32a e-con-full e-flex e-con e-child" data-id="4deb32a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-51135b8 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="51135b8" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-dollar-sign" viewBox="0 0 288 512" xmlns="http://www.w3.org/2000/svg"><path d="M209.2 233.4l-108-31.6C88.7 198.2 80 186.5 80 173.5c0-16.3 13.2-29.5 29.5-29.5h66.3c12.2 0 24.2 3.7 34.2 10.5 6.1 4.1 14.3 3.1 19.5-2l34.8-34c7.1-6.9 6.1-18.4-1.8-24.5C238 74.8 207.4 64.1 176 64V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C45.8 64-5.4 118.7.5 183.6c4.2 46.1 39.4 83.6 83.8 96.6l102.5 30c12.5 3.7 21.2 15.3 21.2 28.3 0 16.3-13.2 29.5-29.5 29.5h-66.3C100 368 88 364.3 78 357.5c-6.1-4.1-14.3-3.1-19.5 2l-34.8 34c-7.1 6.9-6.1 18.4 1.8 24.5 24.5 19.2 55.1 29.9 86.5 30v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48.2c46.6-.9 90.3-28.6 105.7-72.7 21.5-61.6-14.6-124.8-72.5-141.7z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Investigação						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Comece trabalhando hoje mesmo<br>como investigador digital com nossas<br>ferramentas.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d244019 e-con-full e-flex e-con e-child" data-id="d244019" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-3349576 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="3349576" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="620" height="590" viewBox="0 0 620 590" fill="none"><path d="M218.959 552.782H164.164C154.133 552.782 146 560.915 146 570.946C146 580.978 154.133 589.11 164.164 589.11H456C466.031 589.11 474.164 580.978 474.164 570.946C474.164 560.915 466.031 552.782 456 552.782H401.205V516H218.959V552.782Z" fill="url(#paint0_linear_62_18)"></path><path d="M342 214H278V278.026C278 295.657 292.355 310 310 310C327.645 310 342 295.657 342 278.026V214Z" fill="url(#paint1_linear_62_18)"></path><path d="M342 176V169.393C342 151.531 327.645 137 310 137C292.355 137 278 151.531 278 169.393V176H342Z" fill="url(#paint2_linear_62_18)"></path><path d="M0 476.795C0 486.826 8.13266 494.959 18.1641 494.959H601.836C611.867 494.959 620 486.826 620 476.795V422H0V476.795Z" fill="url(#paint3_linear_62_18)"></path><path d="M620 18.1641C620 8.13266 611.867 0 601.836 0H18.1641C8.13266 0 0 8.13266 0 18.1641V401.274H620V18.1641ZM431.548 246.086H387.817C411.334 255.534 429.206 272.851 431.828 275.474C438.921 282.567 438.921 294.068 431.828 301.161C428.281 304.708 423.632 306.482 418.984 306.482C414.337 306.482 409.687 304.709 406.141 301.161C401.308 296.375 389.148 286.256 376.006 280.508C371.175 312.6 343.418 337.285 310.001 337.285C276.583 337.285 248.827 312.6 243.997 280.508C230.852 286.257 218.684 296.383 213.831 301.19C210.287 304.702 205.655 306.458 201.025 306.458C196.363 306.458 191.704 304.677 188.159 301.115C181.094 294.017 181.092 282.554 188.174 275.473C190.795 272.85 208.668 255.534 232.184 246.084H188.453C178.422 246.084 170.289 237.952 170.289 227.92C170.289 217.889 178.422 209.756 188.453 209.756H232.184C208.668 200.307 190.795 182.991 188.174 180.368C181.08 173.274 181.08 161.774 188.174 154.68C195.266 147.587 206.768 147.587 213.861 154.68C218.602 159.376 230.395 169.203 243.249 175.002V167.071C243.249 130.263 273.195 100.318 310.002 100.318C346.81 100.318 376.755 130.263 376.755 167.071V175.002C389.612 169.202 401.412 159.368 406.173 154.651C413.287 147.604 424.781 147.628 431.846 154.726C438.91 161.825 438.913 173.288 431.831 180.369C429.21 182.992 411.337 200.307 387.821 209.757H431.551C441.583 209.757 449.716 217.89 449.716 227.921C449.716 237.953 441.579 246.086 431.548 246.086Z" fill="url(#paint4_linear_62_18)"></path><defs><linearGradient id="paint0_linear_62_18" x1="310.082" y1="516" x2="310.082" y2="589.11" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1C02"></stop><stop offset="1" stop-color="#FF5732"></stop></linearGradient><linearGradient id="paint1_linear_62_18" x1="310" y1="214" x2="310" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1C02"></stop><stop offset="1" stop-color="#FF5732"></stop></linearGradient><linearGradient id="paint2_linear_62_18" x1="310" y1="137" x2="310" y2="176" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1C02"></stop><stop offset="1" stop-color="#FF5732"></stop></linearGradient><linearGradient id="paint3_linear_62_18" x1="310" y1="422" x2="310" y2="494.959" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1C02"></stop><stop offset="1" stop-color="#FF5732"></stop></linearGradient><linearGradient id="paint4_linear_62_18" x1="310" y1="0" x2="310" y2="401.274" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1C02"></stop><stop offset="1" stop-color="#FF5732"></stop></linearGradient></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Vírus						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aprenda a criar e a manipular<br>
+e se proteger de um vírus.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-5081fb6 e-con-full e-flex e-con e-child" data-id="5081fb6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-b8f0cfb elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="b8f0cfb" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none"><g clip-path="url(#clip0_62_24)"><path d="M502.654 397.68H360.275L431.465 460.789L502.654 397.68Z" fill="url(#paint0_linear_62_24)"></path><path d="M435.256 472.701C433.094 474.618 429.838 474.618 427.675 472.702L350.93 404.667V505.677H512V404.667L435.256 472.701Z" fill="url(#paint1_linear_62_24)"></path><path d="M195.71 408.352V383.839C195.71 380.688 193.147 378.125 189.996 378.125H5.71405C2.56328 378.125 0 380.688 0 383.839V408.352H195.71Z" fill="url(#paint2_linear_62_24)"></path><path d="M0 419.781V506.286C0 509.437 2.56328 512 5.71405 512H189.995C193.145 512 195.709 509.437 195.709 506.286V419.781H0ZM163.455 489.105H123.545C120.39 489.105 117.831 486.547 117.831 483.391C117.831 480.235 120.39 477.677 123.545 477.677H163.455C166.61 477.677 169.169 480.236 169.169 483.391C169.17 486.547 166.611 489.105 163.455 489.105ZM163.524 453.996H123.614C120.459 453.996 117.9 451.437 117.9 448.282C117.9 445.126 120.459 442.568 123.614 442.568H163.524C166.68 442.568 169.238 445.127 169.238 448.282C169.238 451.437 166.68 453.996 163.524 453.996Z" fill="url(#paint3_linear_62_24)"></path><path d="M375.142 166.198V265.799L398.4 245.388C399.442 244.472 400.781 243.968 402.168 243.968H511.716V166.197L375.142 166.198ZM483.034 225.434H426.419C423.263 225.434 420.705 222.875 420.705 219.72C420.705 216.565 423.263 214.006 426.419 214.006H483.034C486.19 214.006 488.748 216.565 488.748 219.72C488.748 222.876 486.19 225.434 483.034 225.434ZM483.034 196.933H403.824C400.667 196.933 398.11 194.374 398.11 191.219C398.11 188.064 400.667 185.505 403.824 185.505H483.034C486.19 185.505 488.748 188.064 488.748 191.219C488.748 194.374 486.19 196.933 483.034 196.933Z" fill="url(#paint4_linear_62_24)"></path><path d="M306.178 24.7685L314.376 0H197.625L205.821 24.7685H306.178Z" fill="url(#paint5_linear_62_24)"></path><path d="M369.429 154.77H398.557V17.1432C398.557 7.69094 390.867 0 381.414 0H326.414L315.732 32.2779C314.958 34.6169 312.772 36.1966 310.307 36.1966H201.693C199.228 36.1966 197.042 34.6169 196.268 32.2779L185.586 0H130.586C121.134 0 113.443 7.68985 113.443 17.1432V154.77H142.571C145.728 154.77 148.285 157.328 148.285 160.484V278.416C148.443 283.181 142.279 285.973 138.802 282.712L113.443 260.456V366.697H189.995C199.447 366.697 207.138 374.387 207.138 383.84V478.254H339.501V391.964C339.501 388.809 342.059 386.25 345.215 386.25H398.556V260.455L373.197 282.712C369.721 285.974 363.556 283.181 363.714 278.416V160.484C363.715 157.327 366.273 154.77 369.429 154.77ZM178.752 138.173C178.752 95.5865 213.405 60.94 256 60.94C298.596 60.94 333.249 95.5865 333.249 138.173V172.266C333.249 191.313 317.751 206.809 298.701 206.809H294.702V221.151C294.702 232.25 285.671 241.28 274.57 241.28H237.429C226.328 241.28 217.298 232.25 217.298 221.151V206.809H213.3C194.249 206.809 178.752 191.313 178.752 172.266V138.173ZM348.365 326.016C348.365 335.461 340.677 343.144 331.228 343.144H180.771C171.323 343.144 163.636 335.461 163.636 326.016V282.872C163.636 273.428 171.322 265.744 180.771 265.744H331.229C340.678 265.744 348.366 273.428 348.366 282.872V326.016H348.365Z" fill="url(#paint6_linear_62_24)"></path><path d="M227.166 147.533C232.645 147.533 237.102 143.077 237.102 137.599C237.102 132.122 232.644 127.666 227.166 127.666C221.687 127.666 217.23 132.122 217.23 137.599C217.23 143.077 221.687 147.533 227.166 147.533Z" fill="url(#paint7_linear_62_24)"></path><path d="M213.299 195.381H223.012C226.168 195.381 228.726 197.939 228.726 201.095V221.151C228.726 225.948 232.631 229.851 237.429 229.851H239.473V212.967C239.473 209.812 242.032 207.253 245.187 207.253C248.342 207.253 250.901 209.812 250.901 212.967V229.851H261.097V212.967C261.097 209.812 263.655 207.253 266.811 207.253C269.967 207.253 272.525 209.812 272.525 212.967V229.851H274.569C279.368 229.851 283.272 225.948 283.272 221.151V201.095C283.272 197.939 285.829 195.381 288.986 195.381H298.698C311.446 195.381 321.818 185.011 321.818 172.266V138.173C321.818 101.889 292.292 72.3682 255.998 72.3682C219.705 72.3682 190.178 101.888 190.178 138.173V172.266C190.181 185.011 200.551 195.381 213.299 195.381ZM284.834 116.238C296.614 116.238 306.199 125.821 306.199 137.6C306.199 149.379 296.614 158.962 284.834 158.962C273.054 158.962 263.469 149.378 263.469 137.6C263.469 125.822 273.054 116.238 284.834 116.238ZM261.026 163.163L271.786 179.835C273.497 182.486 272.734 186.023 270.082 187.734C267.47 189.431 263.904 188.705 262.182 186.032L256.127 176.649L249.756 186.123C247.995 188.742 244.446 189.437 241.826 187.676C239.207 185.915 238.512 182.365 240.272 179.746L251.482 163.074C254.857 159.543 258.766 160.16 261.026 163.163ZM227.166 116.238C238.946 116.238 248.531 125.821 248.531 137.6C248.531 149.379 238.946 158.962 227.166 158.962C215.386 158.962 205.801 149.378 205.801 137.6C205.801 125.822 215.386 116.238 227.166 116.238Z" fill="url(#paint8_linear_62_24)"></path><path d="M284.834 147.533C290.313 147.533 294.77 143.077 294.77 137.599C294.77 132.122 290.312 127.666 284.834 127.666C279.355 127.666 274.898 132.122 274.898 137.599C274.897 143.077 279.355 147.533 284.834 147.533Z" fill="url(#paint9_linear_62_24)"></path><path d="M331.229 277.171H180.771C177.625 277.171 175.065 279.728 175.065 282.871V326.015C175.065 329.158 177.625 331.715 180.771 331.715H331.229C334.377 331.715 336.937 329.158 336.937 326.015V282.871C336.937 279.729 334.377 277.171 331.229 277.171ZM204.694 311.854C200.601 311.854 197.283 308.536 197.283 304.443C197.283 300.35 200.601 297.032 204.694 297.032C208.787 297.032 212.105 300.35 212.105 304.443C212.105 308.536 208.787 311.854 204.694 311.854ZM238.898 311.854C234.806 311.854 231.488 308.536 231.488 304.443C231.488 300.35 234.806 297.032 238.898 297.032C242.991 297.032 246.309 300.35 246.309 304.443C246.309 308.536 242.991 311.854 238.898 311.854ZM273.102 311.854C269.009 311.854 265.691 308.536 265.691 304.443C265.691 300.35 269.009 297.032 273.102 297.032C277.194 297.032 280.513 300.35 280.513 304.443C280.513 308.536 277.194 311.854 273.102 311.854ZM307.306 311.854C303.213 311.854 299.895 308.536 299.895 304.443C299.895 300.35 303.213 297.032 307.306 297.032C311.399 297.032 314.717 300.35 314.717 304.443C314.717 308.536 311.399 311.854 307.306 311.854Z" fill="url(#paint10_linear_62_24)"></path><path d="M0.285645 166.198V243.969H109.832C111.219 243.969 112.558 244.473 113.601 245.389L136.858 265.8V166.199H0.285645V166.198ZM85.5796 225.434H28.9664C25.8113 225.434 23.2523 222.875 23.2523 219.72C23.2523 216.565 25.8113 214.006 28.9664 214.006H85.5796C88.7347 214.006 91.2936 216.565 91.2936 219.72C91.2947 222.876 88.7358 225.434 85.5796 225.434ZM108.177 196.933H28.9664C25.8113 196.933 23.2523 194.374 23.2523 191.219C23.2523 188.064 25.8113 185.505 28.9664 185.505H108.177C111.332 185.505 113.891 188.064 113.891 191.219C113.891 194.374 111.332 196.933 108.177 196.933Z" fill="url(#paint11_linear_62_24)"></path></g><defs><linearGradient id="paint0_linear_62_24" x1="431.465" y1="397.68" x2="431.465" y2="460.789" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint1_linear_62_24" x1="431.465" y1="404.667" x2="431.465" y2="505.677" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint2_linear_62_24" x1="97.8549" y1="378.125" x2="97.8549" y2="408.352" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint3_linear_62_24" x1="97.8544" y1="419.781" x2="97.8544" y2="512" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint4_linear_62_24" x1="443.429" y1="166.197" x2="443.429" y2="265.799" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint5_linear_62_24" x1="256" y1="0" x2="256" y2="24.7685" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint6_linear_62_24" x1="256" y1="0" x2="256" y2="478.254" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint7_linear_62_24" x1="227.166" y1="127.666" x2="227.166" y2="147.533" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint8_linear_62_24" x1="255.998" y1="72.3682" x2="255.998" y2="229.851" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint9_linear_62_24" x1="284.834" y1="127.666" x2="284.834" y2="147.533" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint10_linear_62_24" x1="256.001" y1="277.171" x2="256.001" y2="331.715" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint11_linear_62_24" x1="68.572" y1="166.198" x2="68.572" y2="265.8" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><clipPath id="clip0_62_24"><rect width="512" height="512" fill="white"></rect></clipPath></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Social hacking						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aprenda técnicas de recuperação de redes sociais  (insta, face e wpp).
+
+					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-8e16d0d e-flex e-con-boxed e-con e-parent" data-id="8e16d0d" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-ebcdd20 e-con-full e-flex e-con e-child" data-id="ebcdd20" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-3580d0a elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="3580d0a" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="597" height="597" viewBox="0 0 597 597" fill="none"><g clip-path="url(#clip0_63_45)"><path d="M226.603 155.332V235.746H303.51V155.332C303.51 69.1549 233.367 -0.487793 147.691 -0.487793C61.5143 -0.487793 -8.12842 69.656 -8.12842 155.332V260.547H68.7792V155.332C68.7792 111.492 104.352 75.9188 148.192 75.9188C191.155 75.9188 226.603 111.492 226.603 155.332Z" fill="url(#paint0_linear_63_45)"></path><path d="M562.792 260.547H209.067C185.644 260.547 166.73 279.586 166.73 302.884V555.151C166.73 578.574 185.769 597.488 209.067 597.488H562.792C586.215 597.488 605.128 578.449 605.128 555.151V302.884C605.128 279.461 586.089 260.547 562.792 260.547ZM420.5 504.046H350.857L365.011 430.52C352.861 423.256 345.096 410.104 345.096 394.948C345.096 372.026 363.634 353.488 386.556 353.488C409.477 353.488 428.016 372.026 428.016 394.948C428.016 410.104 419.749 423.256 408.1 430.52L420.5 504.046Z" fill="url(#paint1_linear_63_45)"></path></g><defs><linearGradient id="paint0_linear_63_45" x1="147.691" y1="-0.487793" x2="147.691" y2="260.547" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint1_linear_63_45" x1="385.929" y1="260.547" x2="385.929" y2="597.488" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><clipPath id="clip0_63_45"><rect width="597" height="597" fill="white"></rect></clipPath></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Lock-pick						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aprenda a descobrir falhas em <br> cadeados diversos.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a310d0f e-con-full e-flex e-con e-child" data-id="a310d0f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-b1c9824 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="b1c9824" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="597" height="597" viewBox="0 0 597 597" fill="none"><g clip-path="url(#clip0_63_66)"><path d="M351.176 210.706C341.493 210.706 333.618 218.583 333.618 228.265C334.582 251.559 367.774 251.552 368.735 228.265C368.735 218.583 360.86 210.706 351.176 210.706Z" fill="url(#paint0_linear_63_66)"></path><path d="M245.823 386.294C255.505 386.294 263.382 378.418 263.382 368.735C262.418 345.441 229.226 345.448 228.265 368.735C228.265 378.418 236.142 386.294 245.823 386.294Z" fill="url(#paint1_linear_63_66)"></path><path d="M0 421.412H70.2353V456.53H0V421.412Z" fill="url(#paint2_linear_63_66)"></path><path d="M526.765 140.471H597V175.588H526.765V140.471Z" fill="url(#paint3_linear_63_66)"></path><path d="M428.685 175.588L398.705 205.568C415.542 239.814 389.505 281.308 351.176 280.941C322.131 280.941 298.5 257.311 298.5 228.265C298.137 189.937 339.626 163.896 373.874 180.736L414.139 140.471H526.765V70.2353H456.529V0H421.412V70.2353H386.294V0H351.176V70.2353H316.059V0H280.941V70.2353H245.824V0H210.706V70.2353H175.588V0H140.471V70.2353H70.2353V140.471H0V175.588H70.2353V210.706H0V245.824H70.2353V280.941H0V316.059H70.2353V351.176H0V386.294H70.2353V421.412H168.315L198.295 391.432C181.459 357.185 207.495 315.694 245.824 316.059C274.869 316.059 298.5 339.688 298.5 368.735C298.862 407.063 257.374 433.102 223.127 416.265L182.861 456.529H70.2353V526.765H140.471V597H175.588V526.765H210.706V597H245.824V526.765H280.941V597H316.059V526.765H351.176V597H386.294V526.765H421.412V597H456.529V526.765H526.765V456.529H597V421.412H526.765V386.294H597V351.176H526.765V316.059H597V280.941H526.765V245.824H597V210.706H526.765V175.588H428.685ZM140.471 140.471H175.588V175.588H140.471V140.471ZM175.588 316.059H140.471V280.941H175.588V316.059ZM245.824 245.824H140.471V210.706H210.706V140.471H245.824V245.824ZM456.529 456.529H421.412V421.412H456.529V456.529ZM456.529 386.294H386.294V456.529H351.176V351.176H456.529V386.294ZM456.529 316.059H421.412V280.941H456.529V316.059Z" fill="url(#paint4_linear_63_66)"></path></g><defs><linearGradient id="paint0_linear_63_66" x1="351.177" y1="210.706" x2="351.177" y2="245.733" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint1_linear_63_66" x1="245.823" y1="351.267" x2="245.823" y2="386.294" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint2_linear_63_66" x1="35.1176" y1="421.412" x2="35.1176" y2="456.53" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint3_linear_63_66" x1="561.882" y1="140.471" x2="561.882" y2="175.588" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint4_linear_63_66" x1="298.5" y1="0" x2="298.5" y2="597" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><clipPath id="clip0_63_66"><rect width="597" height="597" fill="white"></rect></clipPath></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Hardware hacking						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aprenda hardware hacker de <br>maneira fácil. 					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-513ea28 e-con-full e-flex e-con e-child" data-id="513ea28" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-4b161d5 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="4b161d5" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="597" height="597" viewBox="0 0 597 597" fill="none"><g clip-path="url(#clip0_63_73)"><path fill-rule="evenodd" clip-rule="evenodd" d="M597 53.3036C597 39.1675 591.392 25.607 581.393 15.6073C571.393 5.6075 557.833 0 543.696 0H53.3036C39.1675 0 25.607 5.6075 15.6073 15.6073C5.60754 25.607 0 39.1675 0 53.3036V543.696C0 557.833 5.60754 571.393 15.6073 581.393C25.607 591.392 39.1675 597 53.3036 597H543.696C557.833 597 571.393 591.392 581.393 581.393C591.392 571.393 597 557.833 597 543.696V53.3036ZM330.909 412.442C334.533 444.296 361.611 469.071 394.446 469.071C429.755 469.071 458.411 440.415 458.411 405.107C458.411 369.799 429.755 341.143 394.446 341.143C364.17 341.143 338.755 362.23 332.145 390.523C320.994 387.091 306.773 383.786 298.5 383.786C288.159 383.786 274.684 387.41 264.855 390.587C258.288 362.272 232.873 341.143 202.554 341.143C167.245 341.143 138.589 369.799 138.589 405.107C138.589 440.415 167.245 469.071 202.554 469.071C235.325 469.071 262.382 444.36 266.091 412.57C274.066 409.649 288.159 405.107 298.5 405.107C306.581 405.107 321.698 409.137 330.909 412.442ZM245.196 405.278C245.111 428.731 226.028 447.75 202.554 447.75C179.015 447.75 159.911 428.646 159.911 405.107C159.911 381.568 179.015 362.464 202.554 362.464C226.05 362.464 245.111 381.504 245.196 404.958V405.278ZM351.804 405.001C351.868 381.504 370.95 362.464 394.446 362.464C417.985 362.464 437.089 381.568 437.089 405.107C437.089 428.646 417.985 447.75 394.446 447.75C370.95 447.75 351.868 428.71 351.804 405.214C351.804 405.15 351.804 405.065 351.804 405.001ZM447.153 282.914L426.322 137.075C425.874 134.005 424.126 131.276 421.503 129.613C418.902 127.929 415.683 127.481 412.698 128.376C412.698 128.376 343.488 149.25 298.5 149.25C253.512 149.25 184.302 128.376 184.302 128.376C181.317 127.481 178.098 127.929 175.497 129.613C172.874 131.276 171.126 134.005 170.678 137.075L149.847 282.914C116.948 291.571 92.8122 298.969 92.8122 298.969C87.1833 300.696 84.0278 306.666 85.7548 312.295C87.4818 317.924 93.4518 321.079 99.0807 319.352C99.0807 319.352 235.517 277.179 298.5 277.179C361.484 277.179 497.919 319.352 497.919 319.352C503.548 321.079 509.518 317.924 511.245 312.295C512.972 306.666 509.817 300.696 504.188 298.969C504.188 298.969 480.052 291.571 447.153 282.914ZM172.192 277.2C215.325 266.475 266.262 255.857 298.5 255.857C330.738 255.857 381.675 266.475 424.808 277.2C420.011 243.64 406.941 152.128 406.941 152.128C384.319 158.248 334.171 170.571 298.5 170.571C262.829 170.571 212.681 158.248 190.059 152.128L172.192 277.2Z" fill="url(#paint0_linear_63_73)"></path></g><defs><linearGradient id="paint0_linear_63_73" x1="298.5" y1="0" x2="298.5" y2="597" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><clipPath id="clip0_63_73"><rect width="597" height="597" fill="white"></rect></clipPath></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Anonimato						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aprenda a se tornar invisível <br>e irrastreável.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-57c7829 e-flex e-con-boxed e-con e-parent" data-id="57c7829" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-85c10ae e-con-full e-flex e-con e-child" data-id="85c10ae" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-a2d8e4e elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="a2d8e4e" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="593" height="463" viewBox="0 0 593 463" fill="none"><path d="M255.095 363.326C232.359 386.065 232.359 422.951 255.095 445.691C277.844 468.427 314.724 468.427 337.471 445.691C360.207 422.951 360.207 386.065 337.471 363.326C314.724 340.586 277.844 340.586 255.095 363.326Z" fill="url(#paint0_linear_63_84)"></path><path d="M296.284 224.819C248.299 224.819 203.157 243.509 169.245 277.455C155.923 290.771 155.923 312.354 169.245 325.662C182.557 338.978 204.13 338.978 217.453 325.662C238.487 304.598 266.492 293.002 296.284 293.002C326.075 293.002 354.082 304.598 375.116 325.662C381.783 332.32 390.527 335.648 399.225 335.648C407.969 335.648 416.668 332.32 423.324 325.662C436.646 312.354 436.646 290.772 423.324 277.455C389.411 243.509 344.268 224.819 296.284 224.819Z" fill="url(#paint1_linear_63_84)"></path><path d="M296.284 112.562C218.298 112.562 144.984 142.934 89.8508 198.074C76.5393 211.391 76.5393 232.976 89.8508 246.282C103.172 259.598 124.758 259.598 138.057 246.282C180.313 204.014 236.514 180.741 296.283 180.741C356.028 180.741 412.229 204.014 454.485 246.282C461.14 252.941 469.885 256.27 478.584 256.27C487.328 256.27 496.038 252.941 502.693 246.282C516.005 232.976 516.005 211.391 502.693 198.074C447.56 142.934 374.27 112.562 296.284 112.562Z" fill="url(#paint2_linear_63_84)"></path><path d="M582.264 118.53C505.887 42.1263 404.331 0.0578613 296.284 0.0578613C188.237 0.0578613 86.6812 42.1263 10.3041 118.53C-3.00745 131.847 -3.00745 153.433 10.3041 166.739C16.9706 173.397 25.6919 176.723 34.4133 176.723C43.1346 176.723 51.8799 173.397 58.5116 166.739C122.012 103.215 206.467 68.2375 296.284 68.2375C386.102 68.2375 470.531 103.215 534.035 166.739C547.344 180.055 568.917 180.043 582.242 166.751C595.551 153.433 595.551 131.847 582.264 118.53Z" fill="url(#paint3_linear_63_84)"></path><defs><linearGradient id="paint0_linear_63_84" x1="296.283" y1="346.271" x2="296.283" y2="462.743" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint1_linear_63_84" x1="296.284" y1="224.819" x2="296.284" y2="335.649" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint2_linear_63_84" x1="296.272" y1="112.562" x2="296.272" y2="256.27" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint3_linear_63_84" x1="296.274" y1="0.0578613" x2="296.274" y2="176.723" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Wi-fi hacking						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aprenda as falhas em <br>redes wi-fi.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-4efaaf5 e-con-full e-flex e-con e-child" data-id="4efaaf5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-21d8593 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="21d8593" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="526" height="556" viewBox="0 0 526 556" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M362.691 387.239L323.896 348.443C360.258 310.416 380.616 257.025 374.727 200.049C361.411 200.689 358.978 199.921 345.278 198.768C357.442 293.259 284.076 377.252 188.433 377.252C100.984 377.252 30.1792 306.447 30.1792 219.126C30.1792 99.2835 157.704 24.3819 261.798 78.9256C263.462 69.0668 266.663 59.5921 270.889 50.7575C199.572 15.8035 113.019 29.5034 55.9147 86.6079C19.2961 123.226 0.986816 171.112 0.986816 219.126C0.986816 322.58 84.851 406.444 188.433 406.444C235.294 406.444 277.803 389.415 310.324 361.375L349.375 400.426L342.589 407.212C336.059 413.742 336.187 424.625 342.589 430.899L396.109 484.419L453.725 426.802L400.206 373.282C393.676 366.881 383.049 366.881 376.519 373.282L362.691 387.239ZM292.399 158.821C351.808 225.912 459.999 183.276 459.999 96.3387C459.999 43.7155 417.235 0.951172 364.484 0.951172C312.885 0.951172 270.761 42.051 269.224 93.3938C269.224 117.593 275.882 140.255 292.399 158.821ZM360.13 122.33V96.9788C360.13 94.5461 362.179 92.6256 364.484 92.6256C389.963 92.6256 402.639 61.7687 384.713 43.8435C366.788 25.9184 335.931 38.594 335.931 63.9453C335.931 69.707 327.225 69.707 327.225 63.9453C327.225 30.9118 367.428 14.267 390.859 37.6978C413.01 59.7201 399.566 97.491 368.837 101.076V122.33C368.837 128.092 360.13 128.092 360.13 122.33ZM360.13 148.962C360.13 143.2 368.837 143.2 368.837 148.962V161.637C368.837 167.399 360.13 167.399 360.13 161.637V148.962ZM294.063 324.756C328.121 290.827 343.229 243.325 336.187 196.592L320.311 190.702C300.209 182.251 279.723 161.253 270.633 141.536C262.694 123.867 259.365 107.99 260.774 88.2723C202.901 56.2631 130.176 65.8659 82.6744 113.368C24.2895 171.752 24.2895 266.372 82.6744 324.885C141.059 383.141 235.678 383.141 294.063 324.756ZM264.615 200.177V309.904C264.615 315.666 255.908 315.666 255.908 309.904V200.177C255.908 163.046 225.564 132.573 188.433 132.573C151.302 132.573 120.829 163.046 120.829 200.177V309.904C120.829 315.666 112.123 315.666 112.123 309.904V200.177C112.123 132.701 194.323 98.2592 242.208 146.273C256.036 160.101 264.615 179.179 264.615 200.177ZM215.705 172.777C222.747 179.819 227.228 189.55 227.228 200.177V309.904C227.228 315.666 218.522 315.666 218.522 309.904V200.177C218.522 174.057 186.384 159.717 167.179 178.922C161.673 184.428 158.344 191.854 158.344 200.177V309.904C158.344 315.666 149.638 315.666 149.638 309.904V200.177C149.638 166.247 190.994 148.066 215.705 172.777ZM192.786 202.737V309.904C192.786 315.666 184.08 315.666 184.08 309.904V202.737C184.08 196.976 192.786 196.976 192.786 202.737ZM459.871 433.076L402.255 490.564L455.774 544.084C481.125 569.435 525.298 551.766 525.298 515.275C525.298 504.904 521.329 494.405 513.391 486.595L459.871 433.076Z" fill="url(#paint0_linear_63_105)"></path><defs><linearGradient id="paint0_linear_63_105" x1="263.142" y1="0.951172" x2="263.142" y2="556" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Perito forense						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Aprenda análise forense e contra<br>inteligência.
+
+					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d47719e e-con-full e-flex e-con e-child" data-id="d47719e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-92405dc elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="92405dc" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="525" height="524" viewBox="0 0 525 524" fill="none"><path d="M215.282 430.563C334.178 430.563 430.563 334.178 430.563 215.282C430.563 96.3849 334.178 0 215.282 0C96.3849 0 0 96.3849 0 215.282C0.128967 334.125 96.4383 430.434 215.282 430.563ZM156.313 27.7526C161.245 26.2018 166.5 28.9425 168.051 33.8741C169.602 38.8057 166.861 44.0608 161.929 45.6116C73.2053 73.4732 20.9141 164.972 41.9452 255.558C62.9764 346.144 150.232 405.245 242.156 391.166C334.079 377.087 399.647 294.581 392.602 201.852C385.557 109.124 308.277 37.4701 215.282 37.4403C210.112 37.4403 205.922 33.2496 205.922 28.0802C205.922 22.9108 210.112 18.7201 215.282 18.7201C317.986 18.7631 403.327 97.9028 411.103 200.312C418.88 302.722 346.467 393.84 244.946 409.391C143.426 424.941 47.0591 359.675 23.825 259.634C0.590842 159.592 58.3306 58.5357 156.313 27.7526ZM299.522 196.561V243.362C299.228 250.825 295.504 257.734 289.432 262.082C295.5 266.434 299.223 273.341 299.522 280.802V327.602C299.522 352.182 257.149 365.043 215.282 365.043C173.414 365.043 131.041 352.182 131.041 327.602V280.802C131.34 273.341 135.063 266.434 141.131 262.082C135.059 257.734 131.335 250.825 131.041 243.362V196.561C131.34 189.1 135.063 182.193 141.131 177.841C135.059 173.493 131.335 166.584 131.041 159.121V112.321C131.041 87.7413 173.414 74.8806 215.282 74.8806C257.149 74.8806 299.522 87.7413 299.522 112.321V159.121C299.228 166.584 295.504 173.493 289.432 177.841C295.5 182.193 299.223 189.1 299.522 196.561Z" fill="url(#paint0_linear_63_108)"></path><path d="M149.761 305.138V327.603C149.761 333.031 172.721 346.323 215.281 346.323C257.842 346.323 280.802 333.031 280.802 327.603V305.138C260.242 314.43 237.834 318.912 215.281 318.243C192.729 318.912 170.321 314.43 149.761 305.138Z" fill="url(#paint1_linear_63_108)"></path><path d="M270.702 272.163C252.847 278.141 234.11 281.062 215.281 280.802C196.453 281.062 177.716 278.141 159.861 272.163C152.569 275.748 149.761 279.267 149.761 280.802C149.761 286.231 172.721 299.523 215.281 299.523C257.842 299.523 280.802 286.231 280.802 280.802C280.802 279.267 277.994 275.748 270.702 272.163Z" fill="url(#paint2_linear_63_108)"></path><path d="M149.761 136.657V159.121C149.761 164.55 172.721 177.842 215.281 177.842C257.842 177.842 280.802 164.55 280.802 159.121V136.657C260.242 145.949 237.834 150.431 215.281 149.761C192.729 150.431 170.321 145.949 149.761 136.657Z" fill="url(#paint3_linear_63_108)"></path><path d="M215.281 131.041C251.467 131.041 280.802 122.66 280.802 112.321C280.802 101.982 251.467 93.6008 215.281 93.6008C179.096 93.6008 149.761 101.982 149.761 112.321C149.761 122.66 179.096 131.041 215.281 131.041Z" fill="url(#paint4_linear_63_108)"></path><path d="M270.702 187.922C252.847 193.9 234.11 196.821 215.281 196.561C196.453 196.821 177.716 193.9 159.861 187.922C152.569 191.507 149.761 195.026 149.761 196.561C149.761 201.99 172.721 215.282 215.281 215.282C257.842 215.282 280.802 201.99 280.802 196.561C280.802 195.026 277.994 191.507 270.702 187.922Z" fill="url(#paint5_linear_63_108)"></path><path d="M149.761 220.898V243.362C149.761 248.791 172.721 262.082 215.281 262.082C257.842 262.082 280.802 248.791 280.802 243.362V220.898C260.242 230.19 237.834 234.671 215.281 234.002C192.729 234.671 170.321 230.19 149.761 220.898Z" fill="url(#paint6_linear_63_108)"></path><path d="M477.139 516.133C488.076 526.475 505.186 526.475 516.123 516.133C521.774 510.51 524.682 502.697 524.082 494.748C523.483 486.8 519.436 479.511 513.007 474.799L382.574 378.671C375.429 385.979 367.816 392.814 359.782 399.132L477.139 516.133Z" fill="url(#paint7_linear_63_108)"></path><defs><linearGradient id="paint0_linear_63_108" x1="215.282" y1="0" x2="215.282" y2="430.563" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint1_linear_63_108" x1="215.281" y1="305.138" x2="215.281" y2="346.323" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint2_linear_63_108" x1="215.281" y1="272.163" x2="215.281" y2="299.523" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint3_linear_63_108" x1="215.281" y1="136.657" x2="215.281" y2="177.842" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint4_linear_63_108" x1="215.281" y1="93.6008" x2="215.281" y2="131.041" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint5_linear_63_108" x1="215.281" y1="187.922" x2="215.281" y2="215.282" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint6_linear_63_108" x1="215.281" y1="220.898" x2="215.281" y2="262.082" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient><linearGradient id="paint7_linear_63_108" x1="441.971" y1="378.671" x2="441.971" y2="523.89" gradientUnits="userSpaceOnUse"><stop stop-color="#FF2308"></stop><stop offset="1" stop-color="#FF5C36"></stop></linearGradient></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Busca de Dados						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Tenha dados privilegiados de <b>qualquer pessoa a sua volta.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-500f623 e-flex e-con-boxed e-con e-parent" data-id="500f623" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6b8729c e-con-full e-flex e-con e-child" data-id="6b8729c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-98922b4 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="98922b4" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="597" height="644" viewBox="0 0 597 644" fill="none"><path d="M574.219 579.64C574.079 579.64 574.079 579.64 573.951 579.64H390.581L386.244 608.531C385.3 615.176 379.598 620.062 372.812 620.062H224.175C217.389 620.062 211.7 615.176 210.743 608.531L206.407 579.64H23.0616C22.9213 579.64 22.9213 579.64 22.7938 579.64H0V596.452C0 622.358 21.0208 643.378 46.9268 643.378H550.073C575.979 643.378 597 622.358 597 596.452V579.64H574.219ZM442.252 431.538C435.199 431.538 429.51 437.24 429.51 444.281C429.51 451.334 435.212 457.023 442.252 457.023C449.306 457.023 454.995 451.321 454.995 444.281C455.008 437.24 449.306 431.538 442.252 431.538ZM154.748 431.538C147.694 431.538 142.005 437.24 142.005 444.281C142.005 451.334 147.707 457.023 154.748 457.023C161.801 457.023 167.49 451.321 167.49 444.281C167.49 437.24 161.801 431.538 154.748 431.538ZM548.849 218.346H408.897C408.757 218.486 408.629 218.613 408.489 218.754V330.095H442.252C449.714 330.095 455.811 336.192 455.811 343.654V406.856C471.13 412.418 482.126 427.061 482.126 444.293C482.126 466.258 464.357 484.166 442.252 484.166C420.288 484.166 402.379 466.271 402.379 444.293C402.379 427.074 413.362 412.558 428.694 406.856V357.225H394.93C387.468 357.225 381.371 351.128 381.371 343.667V291.178H312.072V397.507C327.391 403.068 338.386 417.711 338.386 434.803C338.386 456.908 320.49 474.817 298.513 474.817C276.548 474.817 258.64 456.921 258.64 434.803C258.64 417.711 269.622 403.068 284.954 397.507V291.178H215.654V343.667C215.654 351.128 209.557 357.225 202.095 357.225H168.332V406.856C183.651 412.558 194.646 427.061 194.646 444.293C194.646 466.258 176.75 484.166 154.773 484.166C132.668 484.166 114.9 466.271 114.9 444.293C114.9 427.074 125.882 412.418 141.214 406.856V343.654C141.214 336.192 147.311 330.095 154.773 330.095H188.536V218.754C188.396 218.613 188.269 218.486 188.128 218.346H48.1513C41.7737 218.346 36.6205 223.499 36.6205 229.876V552.509H218.078C233.894 552.509 233.397 576.617 235.846 592.918H361.154C363.807 575.29 363.131 552.509 378.922 552.509H560.379V229.876C560.379 223.499 555.226 218.346 548.849 218.346ZM298.64 422.188H298.372C291.459 422.188 285.757 427.89 285.757 434.803C285.757 441.857 291.459 447.686 298.5 447.686C305.554 447.686 311.243 441.857 311.243 434.803C311.243 427.877 305.554 422.188 298.64 422.188ZM298.5 0C232.045 0 177.937 54.1081 177.937 120.563C177.937 136.163 180.921 151.482 186.61 165.59C192.312 179.824 200.845 192.848 211.7 204.111C211.7 204.251 211.84 204.251 211.84 204.251C218.422 214.124 215.641 220.425 215.641 264.061H381.371C381.371 206.279 379.267 213.103 385.172 204.251C385.172 204.251 385.313 204.251 385.313 204.111C407.15 181.597 419.076 151.903 419.076 120.563C419.063 54.1081 364.955 0 298.5 0ZM265.821 236.114C265.821 243.576 259.724 249.673 252.262 249.673C244.673 249.673 238.703 243.576 238.703 236.114V208.856C238.703 201.266 244.673 195.297 252.262 195.297C259.724 195.297 265.821 201.266 265.821 208.856V236.114ZM275.043 118.255C275.043 135.678 261.127 150.258 243.04 150.258C225.412 150.258 211.037 135.882 211.037 118.255V100.078H275.056V118.255H275.043ZM312.059 236.114C312.059 243.576 305.962 249.673 298.5 249.673C291.038 249.673 284.941 243.576 284.941 236.114V208.856C284.941 201.266 291.038 195.297 298.5 195.297C305.962 195.297 312.059 201.266 312.059 208.856V236.114ZM358.31 236.114C358.31 243.576 352.34 249.673 344.751 249.673C337.289 249.673 331.192 243.576 331.192 236.114V208.856C331.192 201.266 337.289 195.297 344.751 195.297C352.34 195.297 358.31 201.266 358.31 208.856V236.114ZM353.973 150.27C335.873 150.27 321.97 135.678 321.97 118.267V100.091H385.989V118.267C385.976 135.895 371.601 150.27 353.973 150.27Z" fill="url(#paint0_linear_63_123)"></path><defs><linearGradient id="paint0_linear_63_123" x1="298.5" y1="0" x2="298.5" y2="643.378" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1900"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Offensive hacking						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Descubra o lado obscuro<br> do hacking.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-894f2ef e-con-full e-flex e-con e-child" data-id="894f2ef" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-d2829f8 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="d2829f8" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="597" height="715" viewBox="0 0 597 715" fill="none"><path d="M373.124 714.89C397.027 714.89 417.872 694.046 417.872 670.143V565.638H447.75C465.68 565.638 477.629 553.684 477.629 535.759V237.278H119.369V535.762C119.369 553.689 131.321 565.64 149.248 565.64H179.129V670.145C179.129 694.048 199.969 714.893 223.876 714.893C247.777 714.893 268.619 694.048 268.619 670.145V565.64H328.379V670.145C328.376 694.046 349.221 714.89 373.124 714.89Z" fill="url(#paint0_linear_63_154)"></path><path d="M552.257 535.762C576.16 535.762 597 514.919 597 491.014V282.007C597 258.23 576.16 237.278 552.257 237.278C528.352 237.278 507.51 258.23 507.51 282.007V491.014C507.51 514.917 528.35 535.762 552.257 535.762Z" fill="url(#paint1_linear_63_154)"></path><path d="M44.7428 535.762C68.6481 535.762 89.4904 514.919 89.4904 491.014V282.007C89.4904 258.23 68.6505 237.278 44.7428 237.278C20.8399 237.278 0 258.23 0 282.007V491.014C0 514.917 20.8399 535.762 44.7428 535.762Z" fill="url(#paint2_linear_63_154)"></path><path d="M441.772 4.50863C435.799 -1.50288 426.905 -1.50288 420.932 4.50863L380.858 44.4494L379.009 46.2958C355.247 34.3968 328.605 28.4545 298.937 28.3972C298.791 28.3972 298.648 28.3924 298.503 28.3924H298.498C298.347 28.3924 298.209 28.3972 298.059 28.3972C268.392 28.4545 241.751 34.3968 217.991 46.2958L216.138 44.4494L176.066 4.50863C170.088 -1.50288 161.199 -1.50288 155.226 4.50863C149.248 10.4867 149.248 19.3585 155.226 25.3318L193.991 64.1037C181.5 72.4434 170.174 82.6487 160.324 94.321C136.743 122.272 121.702 158.649 119.634 198.062C119.615 198.473 119.574 198.878 119.555 199.289C119.429 201.972 119.369 204.67 119.369 207.378H477.629C477.629 204.67 477.564 201.972 477.443 199.289C477.424 198.878 477.383 198.473 477.359 198.062C475.296 158.649 460.25 122.27 436.669 94.3234C426.824 82.6511 415.493 72.4458 403.003 64.1061L441.772 25.3342C447.75 19.3585 447.75 10.4867 441.772 4.50863ZM223.819 155.209C211.457 155.209 201.436 145.187 201.436 132.826C201.436 120.464 211.457 110.442 223.819 110.442C236.181 110.442 246.202 120.464 246.202 132.826C246.202 145.187 236.181 155.209 223.819 155.209ZM373.179 155.209C360.817 155.209 350.795 145.187 350.795 132.826C350.795 120.464 360.817 110.442 373.179 110.442C385.541 110.442 395.562 120.464 395.562 132.826C395.562 145.187 385.541 155.209 373.179 155.209Z" fill="url(#paint3_linear_63_154)"></path><defs><linearGradient id="paint0_linear_63_154" x1="298.499" y1="237.278" x2="298.499" y2="714.893" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1900"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint1_linear_63_154" x1="552.255" y1="237.278" x2="552.255" y2="535.762" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1900"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint2_linear_63_154" x1="44.7452" y1="237.278" x2="44.7452" y2="535.762" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1900"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient><linearGradient id="paint3_linear_63_154" x1="298.499" y1="0" x2="298.499" y2="207.378" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1900"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Android Hacker						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						Exploração de segurança em<br>dispositivos Android.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-6831e06 e-con-full e-flex e-con e-child" data-id="6831e06" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-a944982 elementor-view-default elementor-position-top elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="a944982" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon">
+				<svg xmlns="http://www.w3.org/2000/svg" width="597" height="597" viewBox="0 0 597 597" fill="none"><path d="M422.098 0H174.902C78.3096 0 0 78.3096 0 174.902V422.098C0 518.69 78.3096 597 174.902 597H422.098C518.69 597 597 518.69 597 422.098V174.902C597 78.3096 518.69 0 422.098 0ZM190.154 271.775C194.561 267.367 200.415 264.942 206.641 264.942C212.868 264.942 218.721 267.367 223.129 271.775L275.18 323.826V123.598C275.18 110.737 285.639 100.277 298.5 100.277C311.361 100.277 321.82 110.737 321.82 123.598V323.826L373.871 271.775C378.279 267.367 384.132 264.942 390.359 264.942C396.585 264.942 402.439 267.367 406.846 271.775C411.254 276.182 413.679 282.036 413.679 288.262C413.679 294.489 411.254 300.342 406.846 304.75L314.987 396.609C310.58 401.016 304.727 403.441 298.5 403.441C292.273 403.441 286.42 401.016 282.013 396.609L190.154 304.75C181.059 295.655 181.059 280.858 190.154 271.775ZM508.383 473.402C508.383 486.263 497.924 496.723 485.062 496.723H111.938C99.0763 496.723 88.6172 486.263 88.6172 473.402V391.781C88.6172 378.92 99.0763 368.461 111.938 368.461C124.799 368.461 135.258 378.92 135.258 391.781V450.082H461.742V391.781C461.742 378.92 472.201 368.461 485.062 368.461C497.924 368.461 508.383 378.92 508.383 391.781V473.402Z" fill="url(#paint0_linear_65_182)"></path><defs><linearGradient id="paint0_linear_65_182" x1="298.5" y1="0" x2="298.5" y2="597" gradientUnits="userSpaceOnUse"><stop stop-color="#FF1900"></stop><stop offset="1" stop-color="#FF4D2A"></stop></linearGradient></defs></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							E muito mais...						</span>
+					</h3>
+				
+									<p class="elementor-icon-box-description">
+						São mais de 120 horas e 147Gb de puro <br>conteúdo hacking.					</p>
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-58f4364 e-flex e-con-boxed e-con e-parent" data-id="58f4364" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ea68595 gradient-text1 elementor-widget elementor-widget-heading" data-id="ea68595" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Comece já trabalhando na <br> Code<span class="cor">X</span>plorer!!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-135d715 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="135d715" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">No nosso grupo VIP, a CodeXplorer, em parceria com o Hacker DeeX, oferece diariamente serviços para serem realizados. Você terá a liberdade de cobrar o valor que desejar por esses serviços, considerando a complexidade e o tempo dedicado.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-de849ac elementor-widget elementor-widget-button" data-id="de849ac" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#botao">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Obter Acesso</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-711ef7d e-flex e-con-boxed e-con e-parent" data-id="711ef7d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b7d44d3 elementor-widget elementor-widget-heading" data-id="b7d44d3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Inscreva-se e garanta:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-87c849c gradient-text1 elementor-widget elementor-widget-heading" data-id="87c849c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Bônus exclusivo</h2>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f805e95 elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-id="f805e95" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-feb5dad e-con-full e-flex e-con e-child" data-id="feb5dad" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-b68253d elementor-widget elementor-widget-image" data-id="b68253d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="676" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20676%201024'%3E%3C/svg%3E" class="attachment-large size-large wp-image-568" alt="" data-lazy-srcset="https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-676x1024.png 676w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-198x300.png 198w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-768x1163.png 768w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1.png 971w" data-lazy-sizes="(max-width: 676px) 100vw, 676px" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-676x1024.png" /><noscript><img decoding="async" width="676" height="1024" src="https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-676x1024.png" class="attachment-large size-large wp-image-568" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-676x1024.png 676w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-198x300.png 198w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-768x1163.png 768w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1.png 971w" sizes="(max-width: 676px) 100vw, 676px" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-79d406f e-con-full e-flex e-con e-child" data-id="79d406f" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-3e474d4 e-con-full e-flex e-con e-child" data-id="3e474d4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-43ea3d6 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="43ea3d6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">SpySearch: Busca de Dados</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-78a1e36 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="78a1e36" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><del>R$ 197,00<del></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ec1b39f elementor-widget elementor-widget-heading" data-id="ec1b39f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ao adquirir nosso arsenal hacker, você recebe o SpySearch como um bônus exclusivo! Com o SpySearch, você pode encontrar rapidamente informações com o CPF, nome, telefone e muito mais...
+</h2>				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fb73206 elementor-hidden-desktop e-flex e-con-boxed e-con e-parent" data-id="fb73206" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-514401e e-con-full e-flex e-con e-child" data-id="514401e" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-c0ea38d elementor-widget elementor-widget-image" data-id="c0ea38d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="676" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20676%201024'%3E%3C/svg%3E" class="attachment-large size-large wp-image-568" alt="" data-lazy-srcset="https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-676x1024.png 676w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-198x300.png 198w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-768x1163.png 768w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1.png 971w" data-lazy-sizes="(max-width: 676px) 100vw, 676px" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-676x1024.png" /><noscript><img decoding="async" width="676" height="1024" src="https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-676x1024.png" class="attachment-large size-large wp-image-568" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-676x1024.png 676w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-198x300.png 198w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1-768x1163.png 768w, https://codexplore.com.br/wp-content/uploads/2024/06/BOX-SPY-SEARCH-0222-1.png 971w" sizes="(max-width: 676px) 100vw, 676px" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c0d26aa e-con-full e-flex e-con e-child" data-id="c0d26aa" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-7e10def e-con-full e-flex e-con e-child" data-id="7e10def" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-24e36f3 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="24e36f3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">SpySearch: de Busca de Dados</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b0ddd7d elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="b0ddd7d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">(<del>R$ 197,00<del>)</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-56b2738 elementor-widget elementor-widget-heading" data-id="56b2738" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ao adquirir nosso arsenal hacker, você recebe o SpySearch como um bônus exclusivo! Com o SpySearch, você pode encontrar rapidamente informações como CPF, nome, telefone e muito mais.
+</h2>				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-a3fbf1c e-flex e-con-boxed e-con e-parent" data-id="a3fbf1c" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-fddd4bd gradient-text1 elementor-widget elementor-widget-heading" data-id="fddd4bd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Certificado</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-3e9f769 e-con-full e-flex e-con e-child" data-id="3e9f769" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+		<div class="elementor-element elementor-element-f7da4f4 e-con-full e-flex e-con e-child" data-id="f7da4f4" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-41e1f8a elementor-widget elementor-widget-image" data-id="41e1f8a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="519" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20519'%3E%3C/svg%3E" class="attachment-large size-large wp-image-649" alt="" data-lazy-srcset="https://codexplore.com.br/wp-content/uploads/2024/06/certificado-01.png 958w, https://codexplore.com.br/wp-content/uploads/2024/06/certificado-01-300x195.png 300w, https://codexplore.com.br/wp-content/uploads/2024/06/certificado-01-768x499.png 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/certificado-01.png" /><noscript><img loading="lazy" decoding="async" width="800" height="519" src="https://codexplore.com.br/wp-content/uploads/2024/06/certificado-01.png" class="attachment-large size-large wp-image-649" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2024/06/certificado-01.png 958w, https://codexplore.com.br/wp-content/uploads/2024/06/certificado-01-300x195.png 300w, https://codexplore.com.br/wp-content/uploads/2024/06/certificado-01-768x499.png 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-e657142 e-con-full e-flex e-con e-child" data-id="e657142" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-7addf46 elementor-widget elementor-widget-heading" data-id="7addf46" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">A capacitação profissional é algo essencial para que você possa alcançar novos horizontes. Ao realizar
+o curso você investe naquilo que é mais importante: a aquisição de novos conhecimentos que irão te favorecer a alcançar novos passos na sua vida pessoal e profissional
+<br> <br>
+
+Ao final do curso você receberá um certificado digital comprovando esse novo passo que terá dado em sua vida.</h2>				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fe1bd4f e-flex e-con-boxed e-con e-parent" data-id="fe1bd4f" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1e9b93d elementor-widget elementor-widget-image" data-id="1e9b93d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="465" height="89" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20465%2089'%3E%3C/svg%3E" class="attachment-large size-large wp-image-94" alt="" data-lazy-srcset="https://codexplore.com.br/wp-content/uploads/2024/06/imagen-prova-social.png 465w, https://codexplore.com.br/wp-content/uploads/2024/06/imagen-prova-social-300x57.png 300w" data-lazy-sizes="(max-width: 465px) 100vw, 465px" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/imagen-prova-social.png" /><noscript><img loading="lazy" decoding="async" width="465" height="89" src="https://codexplore.com.br/wp-content/uploads/2024/06/imagen-prova-social.png" class="attachment-large size-large wp-image-94" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2024/06/imagen-prova-social.png 465w, https://codexplore.com.br/wp-content/uploads/2024/06/imagen-prova-social-300x57.png 300w" sizes="(max-width: 465px) 100vw, 465px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-cf5337c gradient-text1 elementor-widget elementor-widget-heading" data-id="cf5337c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Veja como nossos alunos estão<br>
+curtindo o conteúdo:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d62f858 elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="d62f858" data-element_type="widget" data-settings="{&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:100,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:100,&quot;sizes&quot;:[]},&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 6"><figure class="swiper-slide-inner"><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%201138'%3E%3C/svg%3E" alt="01" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/01-1.jpg" /><noscript><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="https://codexplore.com.br/wp-content/uploads/2024/06/01-1.jpg" alt="01" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 6"><figure class="swiper-slide-inner"><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%201138'%3E%3C/svg%3E" alt="02" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/02-1.jpg" /><noscript><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="https://codexplore.com.br/wp-content/uploads/2024/06/02-1.jpg" alt="02" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 6"><figure class="swiper-slide-inner"><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%201138'%3E%3C/svg%3E" alt="03" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/03-2.jpg" /><noscript><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="https://codexplore.com.br/wp-content/uploads/2024/06/03-2.jpg" alt="03" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 6"><figure class="swiper-slide-inner"><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%201138'%3E%3C/svg%3E" alt="04" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/04.jpg" /><noscript><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="https://codexplore.com.br/wp-content/uploads/2024/06/04.jpg" alt="04" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 6"><figure class="swiper-slide-inner"><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%201138'%3E%3C/svg%3E" alt="05" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/05.jpg" /><noscript><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="https://codexplore.com.br/wp-content/uploads/2024/06/05.jpg" alt="05" /></noscript></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 6"><figure class="swiper-slide-inner"><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20640%201138'%3E%3C/svg%3E" alt="06" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/06.jpg" /><noscript><img width="640" height="1138" decoding="async" class="swiper-slide-image" src="https://codexplore.com.br/wp-content/uploads/2024/06/06.jpg" alt="06" /></noscript></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-right" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-121283c e-flex e-con-boxed e-con e-parent" data-id="121283c" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-409dba6 e-con-full e-flex e-con e-child" data-id="409dba6" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-c8b0b85 elementor-widget elementor-widget-image" data-id="c8b0b85" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="789" height="1024" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20789%201024'%3E%3C/svg%3E" class="attachment-large size-large wp-image-725" alt="" data-lazy-srcset="https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen-789x1024.png 789w, https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen-231x300.png 231w, https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen-768x997.png 768w, https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen.png 900w" data-lazy-sizes="(max-width: 789px) 100vw, 789px" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen-789x1024.png" /><noscript><img loading="lazy" decoding="async" width="789" height="1024" src="https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen-789x1024.png" class="attachment-large size-large wp-image-725" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen-789x1024.png 789w, https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen-231x300.png 231w, https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen-768x997.png 768w, https://codexplore.com.br/wp-content/uploads/2024/07/Daniel-Effgen.png 900w" sizes="(max-width: 789px) 100vw, 789px" /></noscript>															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-c59b5dc e-con-full e-flex e-con e-child" data-id="c59b5dc" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-89c3d22 elementor-widget elementor-widget-heading" data-id="89c3d22" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Quem será seu mentor?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b2eb8cf elementor-widget elementor-widget-heading" data-id="b2eb8cf" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Daniel Effgen</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-563e61d elementor-widget elementor-widget-heading" data-id="563e61d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Daniel Effgen, formado em DEFESA CIBERNÉTICA, com mais de 7 anos de experiência na área de AMEAÇA CONTRA DISPOSITIVOS, INTELIGÊNCIA DE AMEAÇA E INVESTIGAÇÃO
+CIBERNÉTICA. Com ele você irá dar os seus primeiros passos nesse universo hacking
+pouco explorado, e ficará a frente do mercado mais LUCRATIVO DO MUNDO. </h2>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c465dc5 e-flex e-con-boxed e-con e-parent" data-id="c465dc5" data-element_type="container" id="botao" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-42f269f elementor-widget elementor-widget-heading" data-id="42f269f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Adquira e receba o acesso em seu e-mail! <br><span class="cor-2">Comece estudar e trabalhar ainda hoje!</span>
+</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-e683f18 e-con-full e-flex e-con e-child" data-id="e683f18" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-2ed941f elementor-widget__width-initial elementor-tablet-align-center elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="2ed941f" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Ferramentas Avançadas</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Segurança e Privacidade</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Atualizações Contínuas</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Acesso vitalício</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Suporte Especializado </span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Trabalho garantido</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-96547e7 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="96547e7" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b858e3c elementor-widget elementor-widget-heading" data-id="b858e3c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">De <del>R$147,00</del> Por</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4217989 gradient-text1 elementor-widget elementor-widget-heading" data-id="4217989" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">12 x R$6,82
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-cd8fd78 elementor-widget elementor-widget-heading" data-id="cd8fd78" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ou R$67,90 à vista</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d179d3a elementor-align-center elementor-widget__width-initial elementor-widget elementor-widget-button" data-id="d179d3a" data-element_type="widget" data-settings="{&quot;ha_floating_fx&quot;:&quot;yes&quot;,&quot;ha_floating_fx_scale_toggle&quot;:&quot;yes&quot;,&quot;ha_floating_fx_scale_x&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:1,&quot;to&quot;:1.2}},&quot;ha_floating_fx_scale_y&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;from&quot;:1,&quot;to&quot;:1.2}},&quot;ha_floating_fx_scale_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1000,&quot;sizes&quot;:[]},&quot;ha_floating_fx_scale_delay&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kirvano.com/005b927a-e3ac-4ac4-b44d-a0b3001c8c4f">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">QUERO MEU ACESSO</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-5bb0a28 elementor-widget elementor-widget-image" data-id="5bb0a28" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="548" height="51" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20548%2051'%3E%3C/svg%3E" class="attachment-large size-large wp-image-122" alt="" data-lazy-srcset="https://codexplore.com.br/wp-content/uploads/2024/06/asset-16-1-1.png.webp 548w, https://codexplore.com.br/wp-content/uploads/2024/06/asset-16-1-1.png-300x28.webp 300w" data-lazy-sizes="(max-width: 548px) 100vw, 548px" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/asset-16-1-1.png.webp" /><noscript><img loading="lazy" decoding="async" width="548" height="51" src="https://codexplore.com.br/wp-content/uploads/2024/06/asset-16-1-1.png.webp" class="attachment-large size-large wp-image-122" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2024/06/asset-16-1-1.png.webp 548w, https://codexplore.com.br/wp-content/uploads/2024/06/asset-16-1-1.png-300x28.webp 300w" sizes="(max-width: 548px) 100vw, 548px" /></noscript>															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-f32294b e-flex e-con-boxed e-con e-parent" data-id="f32294b" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-a413de8 elementor-widget elementor-widget-image" data-id="a413de8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-large size-large wp-image-345" alt="" data-lazy-srcset="https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-1024x1024.png 1024w, https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-300x300.png 300w, https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-150x150.png 150w, https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-768x768.png 768w, https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1.png 1080w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-1024x1024.png" /><noscript><img loading="lazy" decoding="async" width="800" height="800" src="https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-1024x1024.png" class="attachment-large size-large wp-image-345" alt="" srcset="https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-1024x1024.png 1024w, https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-300x300.png 300w, https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-150x150.png 150w, https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1-768x768.png 768w, https://codexplore.com.br/wp-content/uploads/2024/06/selo-7dias-1.png 1080w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>															</div>
+				</div>
+		<div class="elementor-element elementor-element-a8f4fcc e-con-full e-flex e-con e-child" data-id="a8f4fcc" data-element_type="container" data-settings="{&quot;_ha_eqh_enable&quot;:false}">
+				<div class="elementor-element elementor-element-7d522db gradient-text1 elementor-widget elementor-widget-heading" data-id="7d522db" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Aproveite o prazo de <br>7 dias para decidir com tranquilidade!
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-831e8d1 elementor-widget elementor-widget-heading" data-id="831e8d1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Garantia de 7 dias com reembolso total! Ao nos escolher, você desfruta de 7 dias de tranquilidade, sabendo que estaremos aqui para cuidar de você. Se algo não estiver perfeito, nossa política de garantia garante que seu dinheiro será 100% devolvido.
+
+</h2>				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-97b1996 e-flex e-con-boxed e-con e-parent" data-id="97b1996" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c4a6dc5 gradient-text1 elementor-widget elementor-widget-heading" data-id="c4a6dc5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Perguntas Frequentes
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2fb6f61 elementor-widget elementor-widget-accordion" data-id="2fb6f61" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-5001" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-5001" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Qual é a garantia do produto?</a>
+					</div>
+					<div id="elementor-tab-content-5001" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-5001"><div class="faq__item-2 active"><div><p id="iy31da" class="faq__item-2__answer">Oferecemos uma garantia de 7 dias para todos os nossos produtos.</p></div></div><div class="faq__item-2"><div id="il7lfc" class="faq__item-2__header"> </div></div></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-5002" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-5002" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Como irei receber o conteúdo?</a>
+					</div>
+					<div id="elementor-tab-content-5002" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-5002"><div class="faq__item-2 active"><div><p id="ijabos" class="faq__item-2__answer">Após a confirmação do pagamento, você receberá em seu e-mail o acesso a todo o material adquirido.</p></div></div><div class="faq__item-2"><div id="ir71hl" class="faq__item-2__header"> </div></div></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-5003" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-5003" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">É possível devolver ou trocar o produto?</a>
+					</div>
+					<div id="elementor-tab-content-5003" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-5003"><div class="faq__item-2 active"><div><p id="i9jt6j" class="faq__item-2__answer">Sim, aceitamos devoluções no prazo de 7 dias após a compra.</p></div></div><div class="faq__item-2 active"><div id="ip96n5" class="faq__item-2__header"> </div></div></div>
+				</div>
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-5004" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-5004" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></span>
+								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Qual é o prazo de entrega?</a>
+					</div>
+					<div id="elementor-tab-content-5004" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-5004"><section id="igkoy9" class="vtk-section-column-1"><div id="irbatf" class="vtk-section-column-1-container"><div id="iz2ctt" class="vtk-column"><div id="smzqcl" class="component-wrapper-CommmonQuestions2"><div id="vtk-faq2sfe1" class="common-questions-2"><div class="faq__item-2 active"><div><p id="ij036x" class="faq__item-2__answer">O prazo de entrega é instantâneo. </p></div></div></div></div><div id="ikd2wna"> </div></div></div></section><div id="smnsul" class="component-wrapper-FooterVariant1"> </div></div>
+				</div>
+								</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-ab2dc67 e-flex e-con-boxed e-con e-parent" data-id="ab2dc67" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;_ha_eqh_enable&quot;:false}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-569217e elementor-widget elementor-widget-heading" data-id="569217e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Direitos Reservados | Privacy policy | 2024 | CodeXplore
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-60cb9cd elementor-widget elementor-widget-html" data-id="60cb9cd" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- TikTok Pixel Code Start -->
+<script type="rocketlazyloadscript">
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D1FE8KBC77U195PQO680');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->				</div>
+				</div>
+				<div class="elementor-element elementor-element-774b3f8 elementor-widget elementor-widget-html" data-id="774b3f8" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1000667531281728');
+fbq('track', 'PageView');
+</script>
+<noscript><img loading="lazy" height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1000667531281728&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->				</div>
+				</div>
+				<div class="elementor-element elementor-element-5856eb0 elementor-widget elementor-widget-html" data-id="5856eb0" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- TikTok Pixel Code Start -->
+<script type="rocketlazyloadscript">
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('CPTBIHRC77UA4KP614O0');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->				</div>
+				</div>
+				<div class="elementor-element elementor-element-ac58898 elementor-widget elementor-widget-html" data-id="ac58898" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<script type="rocketlazyloadscript" data-minify="1"
+  data-rocket-src="https://codexplore.com.br/wp-content/cache/min/1/scripts/utms/latest.js?ver=1724899647"
+  async
+  defer></script>				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					<script type="rocketlazyloadscript">
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.1.0" id="hello-theme-frontend-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.29.2" id="elementor-webpack-runtime-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.29.2" id="elementor-frontend-modules-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js" defer></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.29.2","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_local_google_fonts":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"nested-elements":true,"editor_v2":true,"home_screen":true,"cloud-library":true,"e_opt_in_v4_page":true,"display-conditions":true,"form-submissions":true,"taxonomy-filter":true},"urls":{"assets":"https:\/\/codexplore.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/codexplore.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/codexplore.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"388fde2a8f"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":7,"title":"codexplore.com.br","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.29.2" id="elementor-frontend-js" defer></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-after">window.addEventListener('DOMContentLoaded', function() {
+"use strict";!function(){var t=jQuery(window);t.on("elementor/frontend/init",function(){var s,i,l,n,e=elementorModules.frontend.handlers.Base.extend({bindEvents:function(){this.run()},getDefaultSettings:function(){return{direction:"alternate",easing:"easeInOutSine",loop:!0,targets:this.findElement(".elementor-widget-container").get(0)}},onElementChange:(s=function(t){-1!==t.indexOf("ha_floating")&&(this.anime&&this.anime.restart(),this.run())},i=400,function(){var t=this,e=arguments,a=l&&!n;clearTimeout(n),n=setTimeout(function(){n=null,l||s.apply(t,e)},i),a&&s.apply(t,e)}),getFxVal:function(t){return this.getElementSettings("ha_floating_fx_"+t)},run:function(){var t=this.getDefaultSettings();this.getFxVal("translate_toggle")&&((this.getFxVal("translate_x.size")||this.getFxVal("translate_x.sizes.to"))&&(t.translateX={value:[this.getFxVal("translate_x.sizes.from")||0,this.getFxVal("translate_x.size")||this.getFxVal("translate_x.sizes.to")],duration:this.getFxVal("translate_duration.size"),delay:this.getFxVal("translate_delay.size")||0}),this.getFxVal("translate_y.size")||this.getFxVal("translate_y.sizes.to"))&&(t.translateY={value:[this.getFxVal("translate_y.sizes.from")||0,this.getFxVal("translate_y.size")||this.getFxVal("translate_y.sizes.to")],duration:this.getFxVal("translate_duration.size"),delay:this.getFxVal("translate_delay.size")||0}),this.getFxVal("rotate_toggle")&&((this.getFxVal("rotate_x.size")||this.getFxVal("rotate_x.sizes.to"))&&(t.rotateX={value:[this.getFxVal("rotate_x.sizes.from")||0,this.getFxVal("rotate_x.size")||this.getFxVal("rotate_x.sizes.to")],duration:this.getFxVal("rotate_duration.size"),delay:this.getFxVal("rotate_delay.size")||0}),(this.getFxVal("rotate_y.size")||this.getFxVal("rotate_y.sizes.to"))&&(t.rotateY={value:[this.getFxVal("rotate_y.sizes.from")||0,this.getFxVal("rotate_y.size")||this.getFxVal("rotate_y.sizes.to")],duration:this.getFxVal("rotate_duration.size"),delay:this.getFxVal("rotate_delay.size")||0}),this.getFxVal("rotate_z.size")||this.getFxVal("rotate_z.sizes.to"))&&(t.rotateZ={value:[this.getFxVal("rotate_z.sizes.from")||0,this.getFxVal("rotate_z.size")||this.getFxVal("rotate_z.sizes.to")],duration:this.getFxVal("rotate_duration.size"),delay:this.getFxVal("rotate_delay.size")||0}),this.getFxVal("scale_toggle")&&((this.getFxVal("scale_x.size")||this.getFxVal("scale_x.sizes.to"))&&(t.scaleX={value:[this.getFxVal("scale_x.sizes.from")||0,this.getFxVal("scale_x.size")||this.getFxVal("scale_x.sizes.to")],duration:this.getFxVal("scale_duration.size"),delay:this.getFxVal("scale_delay.size")||0}),this.getFxVal("scale_y.size")||this.getFxVal("scale_y.sizes.to"))&&(t.scaleY={value:[this.getFxVal("scale_y.sizes.from")||0,this.getFxVal("scale_y.size")||this.getFxVal("scale_y.sizes.to")],duration:this.getFxVal("scale_duration.size"),delay:this.getFxVal("scale_delay.size")||0}),(this.getFxVal("translate_toggle")||this.getFxVal("rotate_toggle")||this.getFxVal("scale_toggle"))&&(this.findElement(".elementor-widget-container").css("will-change","transform"),this.anime=window.anime&&window.anime(t))}});elementorFrontend.hooks.addAction("frontend/element_ready/widget",function(t){elementorFrontend.elementsHandler.addHandler(e,{$element:t})})})}();
+});</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" id="swiper-js" defer></script>
+<script id="happy-elementor-addons-js-extra">
+var HappyLocalize = {"ajax_url":"https:\/\/codexplore.com.br\/wp-admin\/admin-ajax.php","nonce":"299440253e","pdf_js_lib":"https:\/\/codexplore.com.br\/wp-content\/plugins\/happy-elementor-addons\/assets\/vendor\/pdfjs\/lib"};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/happy-elementor-addons/assets/js/happy-addons.min.js?ver=3.11.1" id="happy-elementor-addons-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/happy-elementor-addons/assets/vendor/anime/lib/anime.min.js?ver=3.11.1" id="anime-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.22.0" id="elementor-pro-webpack-runtime-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-includes/js/dist/hooks.min.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/codexplore.com.br\/wp-admin\/admin-ajax.php","nonce":"451b9acc7e","urls":{"assets":"https:\/\/codexplore.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/codexplore.com.br\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/codexplore.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.22.0" id="elementor-pro-frontend-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://codexplore.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.22.0" id="pro-elements-handlers-js" defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://codexplore.com.br/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript><img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"></noscript>',a='<button class="play" aria-label="play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>	<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1752531691 -->
